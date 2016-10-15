@@ -55,3 +55,11 @@ body {
 .form-contribute div{
     margin-bottom: 10px;
 }
+.form-contribute .form-contribute-heading{
+  margin-top: 70px;
+}
+
+/*-----------------------------------------------*/
+.navbar-default{
+  height: 80px;
+}
