@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contribution App</title>
+    <!--bootstrap css file-->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!--custom css file-->
+    <link href="css/custom.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <form class="form-contribute">
+            <h2 class="form-contribute-heading">Contribution Froms</h2>
+
+            <div><span>Date (jj/mm/aaaa):</span>
+                <input type="date"  class="form-control" required autofocus>
+            </div>
+            
+            <div><span>Contributor Names:</span>
+                <input type="text" class="form-control"  required>
+            </div>
+            
+            <div><span>Contributor Number:</span>
+                <input type="text" class="form-control"  required>
+            </div>
+            
+            <div><span>Location:</span>
+                <select name="lacation" class="form-control">
+                    <option value="Pita">Pita</option>
+                    <option value="Timbi Touni">Timbi Touni</option>
+                </select>
+            </div>
+            
+            <div><span>Amount:</span>
+                <input type="number" class="form-control"  required>
+            </div>
+                    
+
+            <button class="btn btn-lg btn-success" type="reset">Cancel</button>
+            <button class="btn btn-lg btn-success" type="submit">Validate</button>
+        </form>
+    </div>
+</body>
+</html>
