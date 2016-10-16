@@ -2,33 +2,8 @@
 
 	include 'orangeapi.php';
 	
-	/**
-	* @param $value
-	* @return mixed
-	*/
-	function escapeJsonString($value) { # list from www.json.org: (\b backspace, \f formfeed)
-		$escapers = array("\\", "/", "\"", "\n", "\r", "\t", "\x08", "\x0c");
-		$replacements = array("\\\\", "\\/", "\\\"", "\\n", "\\r", "\\t", "\\f", "\\b");
-		$result = str_replace($escapers, $replacements, $value);
-		return $result;
-	}
-
-	if (isset($_POST["btnSubmitSMS"])) {
-		//$senderName = 'MyService';
-		//$token = 
-		//$callbackdata = date("Y-m-dTH:i:s"); //initialize callbackData with current datetime, in order to retrieve it in the SMS DR
-		// send SMS with the message to the provided MSISDN
-		//$returnedSMS = sendSMS($_POST["address"],$_POST["address"], $_POST["msg"], $_POST["senderName"]);
-		
-		// write the API response
-		//echo '<br/><br/><span STYLE="color: white; font-size: 10pt">';
-		//echo 'API Response is HTTP code </span><span STYLE="color: orange; font-size: 10pt"><b>' . $returnedSMS[0] . '</b></span>
-		//<span STYLE="color: white; font-size: 10pt"> and Response body is:</span>
-		//<span STYLE="color: orange; font-size: 10pt"><br/>'.$returnedSMS[1];
-		//echo '</span><hr/>';
-		
-		//print_r ($returnedSMS);
 	
+	if (isset($_POST["btnSubmitSMS"])) {
 	$config = array(
 			'token' => '7Bfodsjoi4CKYcyzoALSBUgMGgSP'
 		);
