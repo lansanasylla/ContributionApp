@@ -1,6 +1,5 @@
 <?php session_start();
 $_SESSION['isConnected'] = false;
-$_SESSION['login'] ="";
  ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -42,7 +41,6 @@ $_SESSION['login'] ="";
 	if($requete->rowCount() > 0){
 		//c'est bon 
 		$_SESSION['isConnected'] = true;
-		$_SESSION['login'] =$login;
 		
 		header('location:contribute.php');
 		

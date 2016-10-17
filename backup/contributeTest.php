@@ -25,7 +25,7 @@
      if(isset($_POST['dat']) && !empty($_POST['dat'])){
 		if(isset($_POST['firstName']) && !empty($_POST['firstName'])){
 			if(isset($_POST['lastName']) && !empty($_POST['lastName'])){
-				if(isset($_POST['numbers']) && !empty($_POST['numbers'])){
+				if(isset($_POST['number']) && !empty($_POST['number'])){
 					if(isset($_POST['location']) && !empty($_POST['location'])){
 						if(isset($_POST['amount']) && !empty($_POST['amount'])){
 							
@@ -36,8 +36,9 @@
 							$locationID = htmlspecialchars($_POST['location']);
 							$amount = htmlspecialchars($_POST['amount']);
 							
-							$numbers = formatTelephoneNumber($numbers);
+							$number = formatTelephoneNumber($number);
 							// echo ( "numero formate " .$number);
+							
 							
 							try{
 								$insert = $bdd->prepare('INSERT INTO contributors (Date_Contributors,First_Name,Last_Name,Numbers,Amount,Receiver) 
@@ -62,9 +63,8 @@
 								);
 
 								$orangeAPI = new orangeAPI($config);
-								$response = $orangeAPI->sendSms('tel:'.$firsName ,'tel:+'.$numbers,$msg,'eHAG');
+								$response = $orangeAPI->sendSms('tel:+'.$number ,'tel:+'.$number,$msg,'eHAG');
 								
-
 							if (empty($response['error'])) {
 								
 								echo 'Contribution enregistree avec succes, 
@@ -72,6 +72,7 @@
 								
 							} else {
 							       echo'Contribution enregistree avec succes,mais le message n\'a pas ete envoye :';
+								   print_r($response['error']);
 							}	
 						}catch(Exception $e){ 
 							  die('Erreur : '.$e->getMessage());
@@ -83,7 +84,7 @@
 				}else { echo"number n'est pas fourni ";}
 			}else { echo"last name n'est pas fourni ";}
 		}else { echo"first name n'est pas fourni ";}
-	 }
+	 }else { echo"date n'est pas fourni ";}
     	
 		
 	?>
@@ -112,7 +113,7 @@
                     </div>
 
                     <div><span>Contributor Number:</span>
-                        <input type="text" name='numbers' class="form-control"  required>
+                        <input type="text" name='number' class="form-control"  required>
                     </div>
                     
                     <div><span>Location:</span>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contribution App</title>
+    <!--bootstrap css file-->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!--custom css file-->
+    <link href="css/custom.css" rel="stylesheet">
+</head>
+<body>  
+      <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="row">
+        <div class="navbar-header col-sm-10 col-xs-12">
+          <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>-->
+          <a class="navbar-brand" href="#">
+              <img src="static/images/logo.png" alt="Logo" >
+          </a>
+        </div>
+        <div id="navbar" class="navbar-collapse col-sm-2 col-xs-12" onresize="test()">
+           <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Use Name <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Log Out</a></li>
+                </ul>
+              </li>
+            </ul>
+        </div><!--/.navbar-collapse -->
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+        <ul id="navTab" class="nav nav-tabs">
+            <li class="nav active"><a href="#Contribution" data-toggle="tab">Contribution</a></li>
+            <li class="nav"><a href="#Contributors-List" data-toggle="tab">Contributors List</a></li>
+        </ul>
+         <!-- Tab panes -->
+        <div class="tab-content">
+            <div class="tab-pane fade in active" id="Contribution">
+                <form class="form-contribute">
+                    <h2 class="form-contribute-heading">Contribution Froms</h2>
+
+                    <div><span>Date (jj/mm/aaaa):</span>
+                        <input type="date"  class="form-control" required autofocus>
+                    </div>
+                    
+                    <div><span>Contributor First Name:</span>
+                        <input type="text" class="form-control"  required>
+                    </div>
+                    
+                    <div><span>Contributor Last Name:</span>
+                        <input type="text" class="form-control"  required>
+                    </div>
+
+                    <div><span>Contributor Number:</span>
+                        <input type="text" class="form-control"  required>
+                    </div>
+                    
+                    <div><span>Location:</span>
+                        <select name="lacation" class="form-control">
+                            <option value="Pita">Pita</option>
+                            <option value="Timbi Touni">Timbi Touni</option>
+                        </select>
+                    </div>
+                    
+                    <div><span>Amount:</span>
+                        <input type="number" class="form-control"  required>
+                    </div>
+                            
+
+                    <button class="btn btn-lg btn-success" type="reset">Cancel</button>
+                    <button class="btn btn-lg btn-success" type="submit">Validate</button>
+                </form>
+            </div>
+
+            <div class="tab-pane fade" id="Contributors-List">
+                <h2 class="list-header">Contributors List</h2>
+                <div class="table-responsive">
+                    <div class="pull-right">
+                        Filter   
+                        <input type="search" >
+                    </div>
+                    <table class="table table-striped table-responsive">
+                    <thead>
+                        <tr>
+                        <th>Date</th>
+                        <th>Names</th>
+                        <th>Number</th>
+                        <th>Amount</th>
+                        <th>Receiver</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>jj/mm/aaaa</td>
+                            <td>Lorem</td>
+                            <td>235476887</td>
+                            <td>342 786</td>
+                            <td>sit</td>
+                        </tr>
+                        <tr>
+                            <td>jj/mm/aaaa</td>
+                            <td>Lorem</td>
+                            <td>235476887</td>
+                            <td>342 786</td>
+                            <td>sit</td>
+                        </tr>
+                        <tr>
+                            <td>jj/mm/aaaa</td>
+                            <td>Lorem</td>
+                            <td>235476887</td>
+                            <td>342 786</td>
+                            <td>sit</td>
+                        </tr>
+                        <tr>
+                            <td>jj/mm/aaaa</td>
+                            <td>Lorem</td>
+                            <td>235476887</td>
+                            <td>342 786</td>
+                            <td>sit</td>
+                        </tr>
+                        <tr>
+                            <td>jj/mm/aaaa</td>
+                            <td>Lorem</td>
+                            <td>235476887</td>
+                            <td>342 786</td>
+                            <td>sit</td>
+                        </tr>
+                        <tr>
+                            <td>jj/mm/aaaa</td>
+                            <td>Lorem</td>
+                            <td>235476887</td>
+                            <td>342 786</td>
+                            <td>sit</td>
+                        </tr>
+                        <tr>
+                            <td>jj/mm/aaaa</td>
+                            <td>Lorem</td>
+                            <td>235476887</td>
+                            <td>342 786</td>
+                            <td>sit</td>
+                        </tr>
+                        <tr>
+                            <td>jj/mm/aaaa</td>
+                            <td>Lorem</td>
+                            <td>235476887</td>
+                            <td>342 786</td>
+                            <td>sit</td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </div>
+                <div class="pull-right">
+                    <a href="#"><span class="glyphicon glyphicon-step-backward" aria-hidden="true"></span></a>
+                    <a href="#"><span class="glyphicon glyphicon-step-forward" aria-hidden="true"></span></a>
+                </div>
+            </div>
+        </div>
+     
+    </div>
+     <!--footer-->
+    <footer class="navbar navbar-default navbar-fixed-bottom footer">
+        <div class="container">
+        <p class="text-muted">By <a href="http://www.ehealthafrica.org/">eHealthAfrica 2016</a></p>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(window).on('resize',function(){
+            var winWidth =  $(window).width();
+            if(winWidth < 768 ){
+                document.getElementById('navTab').style.marginTop="105px";
+            }else{
+                document.getElementById('navTab').style.marginTop="70px";
+            }
+            });
+        });
+    </script>
+</body>
+</html>
