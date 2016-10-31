@@ -1,0 +1,121 @@
+body {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+
+.form-signin .form-signin-heading,
+.form-contribute .form-contribute-heading,
+.list-header{
+  margin-top: 5px;
+  text-align: center;
+  font-size: 2em;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="text"] {
+    margin-bottom: 10px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+
+/*----------------------------------------------*/
+.form-contribute{
+  max-width: 800px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-contribute div{
+    margin-bottom: 10px;
+}
+.nav-tabs{
+  margin-top: 70px;
+}
+/*----------Side Bar------------------*/
+.side-bar{
+  padding: 10px;
+  background-color: #f5f5f5;
+  height: 100%;
+  border-radius: 5px;
+}
+.side-bar div{
+  margin:3px;
+}
+/*-----------------------------------------------*/
+.navbar-default{
+  height: 70px;
+}
+.navbar-collapse{
+  margin-top: 18px;
+}
+
+/*-------------footer-------------------------*/
+.footer {
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  background-color: #f5f5f5;
+}
+
+
+/*CSS from https://w3schools.com*/
+/* Remove margins and padding from the list */
+#newFiltre {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the list items */
+#newFiltre li {
+    list-style: none;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+#newFiltre li:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+/* Darker background-color on hover */
+#newFiltre li:hover {
+    background: #ddd;
+}
+
